@@ -475,6 +475,12 @@ public class Interfaz extends javax.swing.JFrame {
     private void btnDecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDecimalActionPerformed
         calc = new CalculadoraDecimal();
          display.setText(Integer.toString(Integer.parseInt(display.getText())));
+        btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
+        btnD.setEnabled(false);
+        btnE.setEnabled(false);
+        btnF.setEnabled(false);
     }//GEN-LAST:event_btnDecimalActionPerformed
 
     private void btnHexaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexaActionPerformed
@@ -513,8 +519,16 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnOctalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOctalActionPerformed
-       //  calc = new CalculadoraOctal();
-        //display.setText(Integer.toOctalString(Integer.parseInt(display.getText())));
+       calc = new CalculadoraOctal();
+       display.setText(Integer.toOctalString(Integer.parseInt(display.getText())));
+       btnA.setEnabled(false);
+        btnB.setEnabled(false);
+        btnC.setEnabled(false);
+        btnD.setEnabled(false);
+        btnE.setEnabled(false);
+        btnF.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
     }//GEN-LAST:event_btnOctalActionPerformed
 
     /**
